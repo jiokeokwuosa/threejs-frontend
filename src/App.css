@@ -1,0 +1,34 @@
+html,
+body {
+    font-family: monospace !important;  
+    height: 100vh;
+    background: white !important;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+a {    
+    text-decoration: none;
+    background-color: inherit !important;
+    color:inherit;
+}
+.center{
+  text-align: center;
+}
+a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+.off{
+  display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {  
+  .h3, h3 {
+      font-size: 1.35rem;
+  }
+}

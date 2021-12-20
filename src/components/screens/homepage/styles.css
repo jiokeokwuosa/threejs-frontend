@@ -1,0 +1,44 @@
+#header {
+    height: 97px;
+    padding: 20px;
+    background: linear-gradient(to right, #769189, #077c59) !important;
+}
+#header img {
+    object-fit: contain;
+    height: 61px;
+    width: 61px;
+    margin: auto;
+    display: block;
+}
+#header h2 {
+    color: white;
+}
+.sidebar{
+    background: linear-gradient(to right, #769189, #077c59) !important;
+    height: 85vh; 
+    padding-top: 40px;
+}
+.sidebar ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar ul li{
+   color: white;
+   font-size: 14px;
+   padding: 6px;
+}
+.sidebar .active{
+   color: aqua !important;
+   font-size: 16px;
+}
+canvas {
+    width: 100% !important;
+    height: 80vh !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+@media screen and (max-width: 768px) { 
+   
+}
