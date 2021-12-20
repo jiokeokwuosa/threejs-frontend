@@ -1,25 +1,20 @@
-# Sticky Note App/ Drawing Pad
+# 3D Display
 
-## Features
-
-- Add a sticky note anywhere on the screen.
-- Drag and drop a sticky note to a new location.
-- Delete a sticky note. 
-- Set the text contained in a sticky note (either at creation or after).
-- Clear the canvas of all sticky notes.
-- Color: Add ability to change the color of a sticky note
-- Images: Add ability to upload images to the canvas.
-- Ability to draw on the canvas
-- Ability to draw with color
-- Ability to download the drawing
-- Ability to clear the drawing
+## Interface requirements:
+The user interface should be made up of 3 sections: the header, the 3D viewer and sidebar.
+- The header is made up of static content: a logo and a title.
+- The 3D viewer displays randomly placed and randomly coloured 3D cubes for each starship
+- The sidebar displays a list of starships and the number of times the corresponding geometry was clicked on in the 3D viewer
+- You should only consider starships containing `wing` in their name (Y-wing, X-wing, A-wing, B-wing, T-70 X-wing fighter and V-wing at the time of writing). The application       should query the SWAPI API (https://swapi.dev/) for all starships and filter for the ones containing `wing` in their name. 
+- Hovering on a 3D cube in the 3D viewer should highlight the corresponding name in the sidebar list
+- Clicking on a 3D cube  in the 3D viewer should increment the corresponding value in the sidebar list
+- The values displayed in the sidebar should be persisted in a mongo database and used as initial values when refreshing or relaunching the application
 
 ## Technologies
 
 - React JS
 - Redux
-
-
+- Three JS
 
 ## Requirements and Installation
 
@@ -30,23 +25,17 @@ To install and run this project you would need to have installed:
 
 To run frontend:
 ```
-$ git clone https://github.com/jiokeokwuosa/koala-sticky-note-app.git
+$ git clone https://github.com/jiokeokwuosa/scaled-robotics-frontend.git
 $ npm install
 $ npm start
 ```
 
 ## UI
-![Screenshot (416)](https://user-images.githubusercontent.com/33726993/144513523-cff249be-3166-49a0-bad6-a857ffb76c77.png)
-![Screenshot (356)](https://user-images.githubusercontent.com/33726993/140674480-07dcfacc-3bff-4694-9d60-5a1923e7464a.png)
-![Screenshot (357)](https://user-images.githubusercontent.com/33726993/140674484-2ec2bb4a-e15e-4b68-820a-6acb56c0dd1d.png)
-![Screenshot (358)](https://user-images.githubusercontent.com/33726993/140674487-a2894683-304f-423a-90ae-fd34534007ac.png)
-![Screenshot (359)](https://user-images.githubusercontent.com/33726993/140674488-c20e0c4f-f52f-43d7-a200-ad09d51f3d5f.png)
-![Screenshot (360)](https://user-images.githubusercontent.com/33726993/140674489-ebc39fcf-4cbc-49d3-b1f5-50b58e3a78fa.png)
-![Screenshot (361)](https://user-images.githubusercontent.com/33726993/140674490-cfb75741-bd46-40ac-8b4d-a0f499a35410.png)
+![Screenshot (445)](https://user-images.githubusercontent.com/33726993/146699316-f0f7e957-2b47-4653-a210-adfe223d9463.png)
+![Screenshot (446)](https://user-images.githubusercontent.com/33726993/146699318-eb839f59-9a48-472b-a7c2-b6a463c948cd.png)
 
-
-None
-
+## Testing
+$ npm test (not complete)
 
 ## Author
 
